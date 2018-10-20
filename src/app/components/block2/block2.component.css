@@ -1,0 +1,7 @@
+.title {
+    font-size: 24px;
+}
+
+span > .fa {
+    color: gray;
+}

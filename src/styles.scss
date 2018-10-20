@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+
+$pink: #E533BF;
+$pink-dark: #D523AF;
+
+.bg-pink {
+    background-color: $pink;
+}
+
+.header {
+  background-color: $pink;
+  color: white;
+  padding: 4px;
+}
+
+.btn-pink {
+    color: #fff;
+    background-color: $pink;
+    border-color: $pink;
+}
+
+.btn-pink:hover {
+    color: #fff;
+    background-color: $pink-dark;
+    border-color: $pink-dark;
+}
+
+.btn-pink:focus, .btn-outline-pink.focus {
+    box-shadow: 0 0 0 0.2rem rgba(229, 51, 191, 0.5);
+}
+
+
+
+
+
+.btn-outline-pink {
+    color: $pink;
+    background-color: transparent;
+    background-image: none;
+    border-color: $pink;
+  }
+  
+  .btn-outline-pink:hover {
+    color: #fff;
+    background-color: $pink;
+    border-color: $pink;
+  }
+  
+  .btn-outline-pink:focus, .btn-outline-pink.focus {
+    box-shadow: 0 0 0 0.2rem rgba(229, 51, 191, 0.5);
+  }
+  
+  .btn-outline-pink.disabled, .btn-outline-pink:disabled {
+    color: $pink;
+    background-color: transparent;
+  }
+  
+  .btn-outline-pink:not(:disabled):not(.disabled):active, .btn-outline-pink:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-pink.dropdown-toggle {
+    color: #fff;
+    background-color: $pink;
+    border-color: $pink;
+  }
+  
+  .btn-outline-pink:not(:disabled):not(.disabled):active:focus, .btn-outline-pink:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-pink.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(229, 51, 191, 0.5);
+  }
+  
+
+
+
+
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+

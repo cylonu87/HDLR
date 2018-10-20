@@ -1,0 +1,91 @@
+<main class="container" role="main">
+  <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-pink rounded shadow-sm">
+    <div class="p-2">
+        <a [routerLink]="['/']"><img src="assets/favorite.svg" alt="brand" class="brand-icon"></a>
+    </div>
+    <div class="p-2">
+        <h4 class="mb-0 text-white lh-100">H-DLR</h4>
+        <small>Since 2016</small>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</main>
+
+
+<footer class="footer container">
+    <div class="bg-pink text-white">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2 h5">H-DLR</div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2 h5">Contact</div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <span class="icon">
+                    <i class="fa fa-heart"></i>
+                </span>    
+                <a [routerLink]="['/']">Home</a>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <span class="icon">
+                    <i class="fa fa-reddit-alien"></i>
+                </span>    
+                <a href="https://www.reddit.com/r/AnimeDLR" target="_blank">Reddit</a>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <span class="icon">
+                    <i class="fa fa-rss"></i>
+                </span>    
+                <a [routerLink]="['/changelog']">Changelog</a>       
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <span class="icon">
+                    <img src="assets/discord.svg" style="width: 20px; height: 20px; margin: -4px">
+                </span>
+                <a href="https://discord.gg/R7VabXm" target="_blank">Discord</a>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <span class="icon">
+                    <i class="fa fa-home"></i>
+                </span>
+                <a href="https://cyberneticlifeform.wixsite.com/cylonu87/" target="_blank">Apps</a>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <span class="icon">
+                    <i class="fa fa-twitter"></i>
+                </span>    
+                <a href="https://twitter.com/Panic_Soft" target="_blank">Twitter</a>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</footer>
+
+
+<go-top-button  [scrollDistance]="50" [animate]="true"
+    [styles]="{
+        'position': 'fixed',
+        'right': '10px',
+        'bottom': '10px',
+        'top': 'auto',
+        'color': '#E533BF',
+        'padding': '0',
+        'background-color': 'rgba(0,0,0,0)'
+    }"><i class="fa fa-arrow-circle-up fa-2x"></i></go-top-button>
