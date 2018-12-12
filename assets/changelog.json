@@ -1,6 +1,15 @@
 {
 	"changelog": [
 		{
+			"version": "1.4.0",
+			"changes": [
+				"New source: HAnime.",
+				"Sources updated.",
+				"SDK updated.",
+				"Bugs fixed."
+			]
+		},
+		{
 			"version": "1.3.1",
 			"changes": [
 				"3rd party video player could not be used.",
