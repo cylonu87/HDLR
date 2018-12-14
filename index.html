@@ -23,8 +23,26 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
   <title>H-DLR - Android app to watch hentai online</title>
-  <base href="https://cylonu87.github.io/HDLR/"><link rel="stylesheet" href="styles.7caff4485fbec7a80b1b.css"></head>
+  <base href="https://cylonu87.github.io/HDLR/">
+<link rel="stylesheet" href="styles.49992f2aabed1098dfff.css"></head>
 <body class="bg-light">
+
+<!-- Github Pages hack to allow SPA refresh without receiving 404. -->
+  <script>
+    (function () {
+      // Retrieve the URL the user was trying to access when receiving the 404.
+      var redirect = sessionStorage.redirect;
+      // Remove the URL from sessionStorage.
+      delete sessionStorage.redirect;
+      // Check if we actually need to redirect.
+      if (redirect && redirect != location.href) {
+        // We need to redirect to the URL the user was trying to access.
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+<!-- /Github Pages hack. --> 
+
   <app-root></app-root>
-<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.f6ae3e8b63939c618130.js"></script><script type="text/javascript" src="main.8e1a22629c1c76408c5e.js"></script></body>
+<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.4a68e5b4d8bcc303b21f.js"></script><script type="text/javascript" src="main.2ae7188eb7fe9d4cf32d.js"></script></body>
 </html>
