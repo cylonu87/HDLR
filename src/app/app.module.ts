@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { GoTopButtonModule } from 'ng2-go-top-button';
 
+import { AngularFireModule } from '@angular/fire';
+
 import { AppComponent } from './app.component';
 import { DownloadAppButtonComponent } from './components/download-app-button/download-app-button.component';
 import { Block1Component } from './components/block1/block1.component';
@@ -15,6 +17,10 @@ import { ChangelogComponent } from './components/changelog/changelog.component';
 import { ChangelogService } from './services/changelog.service';
 import { DownloadAppService } from './services/download-app.service';
 import { Http404Component } from './components/http404/http404.component';
+
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +38,9 @@ import { Http404Component } from './components/http404/http404.component';
     BrowserAnimationsModule,
     
     GoTopButtonModule,
+
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
 
     RouterModule.forRoot( [
       {path: '', component: HomeComponent},
