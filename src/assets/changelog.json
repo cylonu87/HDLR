@@ -1,6 +1,17 @@
 {
 	"changelog": [
 		{
+			"version": "1.5.0",
+			"changes": [
+				"Requires Android 4.4 or higher.",
+				"UI updates (menu, settings, bookmarks).",
+				"Download queue: file size added.",
+				"Internal player: resume video in stream mode.",
+				"Source removed: HentaiHaven.",
+				"Source addded: HentaiMama."
+			]
+		},
+		{
 			"version": "1.4.0",
 			"changes": [
 				"New source: HAnime.",
