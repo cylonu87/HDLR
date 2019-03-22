@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./block1.component.css']
 })
 export class Block1Component implements OnInit {
+  private theDate = "2019-02-01";
+
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public formatDate(dt: String) {
+    return dt.split("-").reverse().join("/")
   }
 
 }
