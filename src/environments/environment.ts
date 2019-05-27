@@ -17,12 +17,14 @@ export const environment = {
 };
 
 export function getApiUrl(user: string, repo: string) {
-  //return "http://localhost/download.json"
   return "https://api.bitbucket.org/2.0/repositories/" + user + "/" + repo + "/downloads?pagelen=100&fields=values.name,values.downloads,values.created_on,values.size,next"
 }
 
 export function getChangelogUrl() {
-  return "http://localhost:4200/assets/changelog.json"
+  //return "http://localhost:4200/assets/changelog.json"
+  //return "http://localhost:4200/assets/changelog.txt"
+  return "https://api.github.com/repos/cylonu87/HDLR/issues?state=closed&creator=cylonu87"
+
 }
 
 

@@ -12,7 +12,12 @@ export class ChangelogService {
 
   getChangelog() {
     let url = getChangelogUrl()
-    return this.httpClient.get(url)
+    return this.httpClient.get(url, {
+      headers: {
+        "Accept": "application/vnd.github.v3+json",
+        "User-Agent": "cylonu87"
+      }
+    })
   }
 
 }

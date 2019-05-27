@@ -17,5 +17,6 @@ export function getApiUrl(user: string, repo: string) {
 }
 
 export function getChangelogUrl() {
-  return "https://cylonu87.github.io/HDLR/assets/changelog.json"
+  //return "https://cylonu87.github.io/HDLR/assets/changelog.json"
+  return "https://api.github.com/repos/cylonu87/HDLR/issues?state=closed&creator=cylonu87"
 }
