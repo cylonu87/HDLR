@@ -3,7 +3,7 @@ import { ChangelogService } from '../../services/changelog.service';
 import { catchError, map } from 'rxjs/operators'
 import { HttpErrorResponse } from '@angular/common/http';
 import { throwError } from 'rxjs';
-import { shallowEqualArrays } from '@angular/router/src/utils/collection';
+//import { shallowEqualArrays } from '@angular/router/src/utils/collection';
 
 @Component({
   selector: 'app-changelog',
