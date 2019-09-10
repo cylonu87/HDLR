@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+//import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +11,11 @@ import { AngularFirestore } from '@angular/fire/firestore';
 export class AppComponent implements OnInit{
   title = 'hdlr';
 
-  constructor(private db: AngularFirestore){}
+  //constructor(private db: AngularFirestore){}
+  constructor(){}
 
   ngOnInit(): void {
-    let now = new Date()
+    /*let now = new Date()
     let dd = now.getDate()
     let mm = now.getMonth() + 1
     let yyyy = now.getFullYear()
@@ -44,7 +45,7 @@ export class AppComponent implements OnInit{
       }).catch(error => {
         console.log("Transaction failed: ", error)
       })
-    }
+    }*/
   }
 
 }
