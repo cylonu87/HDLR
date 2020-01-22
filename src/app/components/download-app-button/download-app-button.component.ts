@@ -5,6 +5,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { Downloads } from '../../models/downloads';
 import { transition, state, style, animate, trigger } from '@angular/animations';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -27,6 +28,8 @@ import { transition, state, style, animate, trigger } from '@angular/animations'
 export class DownloadAppButtonComponent implements OnInit {
   downloadInfo = null
   visible = false
+  
+  faDownload = faDownload
 
   constructor(private downloadAppService: DownloadAppService) { }
 

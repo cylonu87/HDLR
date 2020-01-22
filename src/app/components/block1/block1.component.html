@@ -8,20 +8,23 @@
         </div>
       </div>
       <div class="row no-gutters pt-3 pb-4">
-        <div class="col-md-1"></div>
         <div class="col-md-3 text-center">
           <download-app-button></download-app-button>
         </div>
         <div class="col-md-3 text-center">
           <a class="btn btn-outline-pink" href="#" [routerLink]="['/changelog']">
-            <i class="fa fa-rss"></i>&nbsp;Changelog</a>
+            <fa-icon [icon]="faRss"></fa-icon>&nbsp;Changelog</a>
         </div>
         <div class="col-md-3 text-center">
+          <a href="https://www.patreon.com/cylonu87" target="_blank" class="btn btn-outline-pink">
+			<fa-icon [icon]="faPatreon"></fa-icon>&nbsp;Donation
+          </a>
+		</div>
+        <div class="col-md-3 text-center">
           <a href="https://www.reddit.com/r/AnimeDLR" target="_blank" class="btn btn-outline-pink">
-            <i class="fa fa-question"></i>&nbsp;Help and support
+            <fa-icon [icon]="faQuestion"></fa-icon>&nbsp;Help and support
           </a>
         </div>
-        <div class="col-md-2"></div>
       </div>
       <div class="row no-gutters">
           <div class="col-md-12">

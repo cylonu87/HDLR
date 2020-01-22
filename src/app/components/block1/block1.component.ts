@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faRss, faQuestion } from '@fortawesome/free-solid-svg-icons';
+import { faPatreon } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'block1',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Block1Component implements OnInit {
   private theDate = "2019-02-01";
-
+  
+  faRss = faRss
+  faPatreon = faPatreon
+  faQuestion = faQuestion
 
   constructor() { }
 
